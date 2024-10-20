@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Tutorial - https://www.youtube.com/watch?v=AxHf39lyXC4 
- Code hosted at : https://iammobo.github.io/TSAWebmaster/ -->
+My Code hosted at : https://iammobo.github.io/TSAWebmaster/ -->
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -22,31 +22,51 @@
 <body>
     <!-- Navigation -->
 <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
-    <div class="container px-3">
-       <a href="#" class="navbar-brand"><img src="img/recycling-icon.webp" alt="Logo" title="Logo"></a>
-       <a href="#" class="navbar-brand"><img src="img/vegan-icon.webp" alt="Logo" title="Logo"></a>
-        <!-- TODO - Check Problem with the button click event not resulting in menu dropdown in git -->
+    <div class="container-fluid">
+       <a href="#" class="navbar-brand"><img src="img/recycle-symbol.png" alt="We Recycle" title="We Recycle"></a>
+       <a href="#" class="navbar-brand"><img src="img/vegan.png" alt="Vegan" title="Vegan"></a>
+       <a href="#" class="navbar-brand"><img src="img/site-logo.png" alt="Vegan" title="Vegan"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav item"><a href="" class="nav-link active">Home</a></li>
-                <li class="nav item"><a href="" class="nav-link">About</a></li>
-                <li class="nav item"><a href="" class="nav-link">Services</a></li>
-                <li class="nav item"><a href="" class="nav-link">Projects</a></li>
-                <li class="nav item"><a href="" class="nav-link">Contact Us</a></li>
+                <li class="nav item"><a href="/index.html" class="nav-link active">Home</a></li>
+                <li class="nav item"><a href="/about.html" class="nav-link">About</a></li>
+                <li class="nav item">
+                    <div class="dropdown"><a href="" class="nav-link">Dine-in</a>
+                        <div class="dropdown-content">
+                            <p><a href="#" class="nav-sub-link">Reserve Table</a></p>
+                            <p><a href="#" class="nav-sub-link">Customize Menu</a></p>
+                            <p><a href="#" class="nav-sub-link">Use Coupons</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav item"><a href="" class="nav-link">Carry-Out</a></li>
+                    <li class="nav item">                    
+                        <div class="dropdown"><a href="" class="nav-link">Menu Options</a> 
+                            <div class="dropdown-content">
+                                <p><a href="#" class="nav-sub-link">Vegan</a></p>
+                                <p><a href="#" class="nav-sub-link">Vegetarian</a></p>
+                                <p><a href="#" class="nav-sub-link">Customize</a></p>
+                                <p><a href="#" class="nav-sub-link">Seasonal</a></p>
+                                <p><a href="#" class="nav-sub-link">Today's Special</a></p>
+                            </div>
+                        </div>
+                    </li> 
+                <li class="nav item"><a href="/contactus.html" class="nav-link">Contact Us</a></li>
             </ul>
         </div>
+        <input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button>
+        <a href="#" class="navbar-brand"><img src="img/shopping-cart.png" alt="My Cart" title="My Cart"></a>
     </div>
  </nav>
 <!-- End Navigation -->
  
 	<!-- Start Landing Header-->
      <div class="landing">
-        <h4>World of Vegan</h4>
+        <h4>Plantastic - the World of Vegan</h4>
         <h1>Welcome to Nourish the nature</h1>
-
         <div class="row home justify-content-center px-md-5 px-lg-0">
             <div class="col-3 col-sm-2 col-lg-1 p-0">
                 <!-- <span class="fa-stack fa-2x"> -->
@@ -63,7 +83,7 @@
             <div class="col-3 col-sm-2 col-lg-1 p-0">
                 <!-- <span class="fa-stack fa-2x"> -->
                     <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-mug-hot fa-stack-1x fa-inverse" style="color:#d8ff3b;"></i>
+                    <i class="fas fa-seedling fa-stack-1x fa-inverse" style="color:#d8ff3b;"></i>
                 <!-- </span> -->
             </div>
             <div class="col-3 col-sm-2 col-lg-1 p-0">
@@ -73,12 +93,15 @@
                 <!-- </span> -->
             </div> 
         </div>
+        
      </div>
 	<!-- End Landing Header -->
 
 	
 
     <!-- Heading -->
+
+
      <div class="container">
         <div class="row py-0 py-md-3 py-lg-5">
             <div class="col-12 text-center text-uppercase mt-5">
@@ -88,14 +111,11 @@
                     <i class="fas fa-asterisk"></i>
                 </h1>
                 <div class="border-top border-dark w-50 mx-auto">
-
                 </div>
             </div>
-            
-
         </div>
      </div>
-
+    <!-- End Heading -->
 
 	<!-- Three Column Section -->
 
@@ -261,7 +281,7 @@
         <div class="container">
             <div class="row text-light text-center py-4">
                 <div class="col-lg-4 px-4 my-auto">
-                    <img src="img/logo-white.png" alt="">
+                    <img src="img/site-logo.png" alt="">
                     <p class="lead">Build your own gourmet</p>
                     <ul class="social pt-3 pb-4 pb-lg-auto">
                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
@@ -292,7 +312,10 @@
 
 	<!-- Start Socket -->
     <div class="socket">
-        <p>&copy; <a href="#" target="_blank" rel="noopener noreferrer">plantastic-cousine</a></p>
+        <p>&copy; <a href="#" target="_blank" rel="noopener noreferrer">plantastic-cousine</a>
+             | <a href="#" target="_blank" rel="noopener noreferrer">Terms & Privacy</a>
+             | <a href="#" target="_blank" rel="noopener noreferrer">Employee Portal</a>
+        </p>
     </div>
 	<!-- End Socket -->
 
